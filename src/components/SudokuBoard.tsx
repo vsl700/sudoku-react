@@ -58,7 +58,6 @@ const SquareField = (props: {id: number, onClicked: (fieldId: number) => void}) 
     const isSelected = () => selected === props.id;
 
     const keyPressed = (e: React.KeyboardEvent) => {
-        console.log(`Key down! (${props.id})`);
         if(!isSelected()) return;
 
         setNumber(parseInt(e.key));
